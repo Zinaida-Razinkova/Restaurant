@@ -1,0 +1,114 @@
+.events {
+  background-image: url(../images/event-bg@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .events {
+    background-image: url(../images/event-bg@2x.jpg);
+  }
+}
+
+.events__container {
+  text-align: center;
+}
+
+.events__title {
+  color: $color_white;
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 24px;
+  }
+}
+
+.events__contents {
+  display: inline-block;
+  margin-top: 30px;
+
+  @media screen and (min-width: 550px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.events__content {
+  position: relative;
+}
+
+.events__img {
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 475px;
+
+  }
+}
+
+.events__weddings,
+.events__parties {
+  position: absolute;
+  font-family: $font_details;
+  font-size: 24px;
+  line-height: 0.5;
+  text-transform: uppercase;
+  color: $color_white;
+
+  @media screen and (max-width: 1023.98px) {
+    font-size: 14px;
+  }
+}
+
+.events__weddings {
+  top: 100px;
+  left: 355px;
+  transform: rotate(+90deg);
+
+  @media screen and (max-width: 1023.98px) {
+    top: 60px;
+    left: 200px;
+  }
+
+  @media screen and (max-width: 550px) {
+    top: 60px;
+    left: 200px;
+  }
+}
+
+.events__parties {
+  top: 200px;
+  left: -65px;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+
+  @media screen and (max-width: 1023.98px) {
+    top: 110px;
+    left: -40px;
+  }
+
+  @media screen and (max-width: 550px) {
+    top: 110px;
+    left: -40px;
+  }
+}
+
+
+.events__call {
+  margin-top: 10px;
+
+  font-family: $font_accent;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $color_white;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+}

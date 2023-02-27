@@ -1,0 +1,38 @@
+.team {
+  background-image: url(../images/team-bg@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .team {
+    background-image: url(../images/team-bg@2x.jpg);
+  }
+}
+
+.team__wrapp {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.team__title {
+  margin-top: 40px;
+}
+
+.team__img {
+  margin: 0 auto;
+  max-width: 270px;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 80px;
+    max-width: 475px;
+  }
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site about Restaurant Hungry people">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav">
+                <a href=""><img class="header__logo-mobile" src="./images/logo.png" alt="Logo" width="150"></a>
+                <div class="header__menu" id="header-menu" data-menu>
+                    <ul class="header__list">
+                        <li class="header__list-left"><a class="header__link" href="">HOME</a></li>
+                        <li class="header__list-left"><a class="header__link" href="#about">ABOUT</a></li>
+                        <li class="header__list-left"><a class="header__link" href="#team">TEAM</a></li>
+                        <li class="header__list-left"><a class="header__link" href="#booking">BOOKING</a></li>
+                    </ul>
+                    <a href=""><img class="header__logo-desktop" src="./images/logo.png" alt="Logo" width="150"></a>
+                    <ul class="header__list">
+                        <li class="header__list-right"><a class="header__link" href="#menu">MENU</a></li>
+                        <li class="header__list-right"><a class="header__link" href="#events">EVENTS</a></li>
+                        <li class="header__list-right"><a class="header__link" href="#gallery">GALlERY</a></li>
+                        <li class="header__list-right"><a class="header__link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <button class="header__button" aria-controls="header-menu" aria-expanded="false" type="button"
+                    data-menu-button>
+                    <svg width="22" height="22" aria-label="Mobile menu">
+                        <use class="header__icon-close" href="./images/sprite2.svg#header-close"></use>
+                        <use class="header__icon-open" href="./images/sprite2.svg#header-burger"></use>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="people">
+            <div class="people__container container">
+                <p class="people__name">Restaurant</p>
+                <h1 class="people__title">Hungry people</h1>
+                <p class="people__working">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                <div class="people__button-block">
+                        <a href="#booking" class="people__button-book button">BOOK TABLE</a>
+                        <a href="#gallery" class="people__button-explore button">EXPLORE</a>                   
+                </div>
+                <a href="#menu">
+                    <img class="people__arrow" src="./images/down-btn.png" alt="arrow" width="60" height="60">
+                </a>
+                
+                <div class="people__social">
+                    <a href="" class="link__fb">
+                        <img class="icons__fb" src="./images/fb.png" alt="icon" width="18" height="18">
+                    </a>
+                    <a href="" class="link__twit">
+                        <img class="icons__twit" src="./images/twit.png" alt="icon" width="18" height="18">
+                    </a>
+                    <a href="" class="link__insta">
+                        <img class="icons__insta" src="./images/insta.png" alt="icon" width="18" height="18">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about p_100">
+            <div class="about__container container">
+                <div>
+                    <h2 class="about__title title">About us</h2>
+                    <h3 class="about__subtitle subtitle text__width">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie
+                        est a, tempor magna.
+                    </h3>
+                    <p class="about__text text text__width">
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                        ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                        lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                        semper laoreet.
+                    </p>
+                </div>
+                <img class="about__img" srcset="./images/aboutus@2x.png 2x" src="./images/aboutus.png" alt="About us">
+            </div>
+        </section>
+
+        <section id="team" class="team p_100">
+            <div class="team__container container">
+                <p class="team__name name text__color">Our team</p>
+                <div class="team__wrapp">
+                    <img class="team__img" srcset="./images/team1@2x.png 2x" src="./images/team1.png" alt="Our team"
+                        width="475" height="475">
+                    <div class="team__content">
+                        <h2 class="team__title title text__color">MASTER CHEF</h2>
+                        <h3 class="team__subtitle subtitle text__width text__color">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie
+                            est a, tempor magna.
+                        </h3>
+                        <p class="team__text text text__width text__color">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis
+                            semper laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="book p_100">
+            <div class="book__container container">
+                <div class="book__content">
+                    <div class="book__content-form">
+                        <h3 class="book__title title">book a table</h3>
+                        <form class="book__form" id="book-form" action="https://formspree.io/f/xzbyvrvz" method="POST">
+                            <input class="book__input" placeholder="Name" type="text" name="name"
+                                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                                title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc "
+                                required>
+                            <input class="book__input" type="email" name="email" placeholder="Email"
+                                title="Enter your email" required>
+                            <input class="book__input" placeholder="Phone" type="text" name="phone"
+                                pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+                                title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+                                required>
+                            <input class="book__input" placeholder="People" type="text" name="people" pattern="^[0-9]$"
+                                title="Indicate the number of people in numbers, for example, 11 or 4" required>
+                            <input class="book__input" placeholder="Date (mm/dd)" type="text" name="date">
+                            <input class="book__input" type="text" name="time" placeholder="Time">
+                            <button class="book__button button" id="book-form-button" type="submit">BOOK NOW</button>
+                            <p class="book__form-status" id="book-status"></p>
+                        </form>
+                    </div>
+                    <img class="book__img" srcset="./images/book@2x.png 2x" src="./images/book.png" alt="Book a table">
+                </div>
+                <p class="book__data">
+                    Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone:
+                    <span><a href="tel:+40729131637" class="book__tel">+40 729 131 637</a></span>
+                </p>
+            </div>
+            <a href="#" class="book__scrollup"></a>
+        </section>
+
+        <section class="specialties p_100">
+            <div class="specialties__container container">
+                <p class="specialties__name name">Specialties</p>
+                <div class="specialties__slide">
+                    <div class="specialties__wrapp">
+                        <img class="specialties__img" src="./images/specialties1.png" alt="Specialties">
+                        <div class="specialties__content text__width">
+                            <h2 class="specialties__title title text__color">Chocolate pancakes</h2>
+                            <h3 class="specialties__subtitle subtitle text__color">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                molestie est a, tempor magna.
+                            </h3>
+                            <p class="specialties__text text text__color">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                                ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+                                Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialties__slide">
+                    <div class="specialties__wrapp">
+                        <img class="specialties__img" srcset="./images/specialties@2x.png 2x"
+                            src="./images/specialties.png" alt="Specialties">
+                        <div class="specialties__content text__width">
+                            <h2 class="specialties__title title">Ice cream</h2>
+                            <h3 class="specialties__subtitle subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                molestie est a, tempor magna.
+                            </h3>
+                            <p class="specialties__text text">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                                ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+                                Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialties__slide">
+                    <div class="specialties__wrapp">
+                        <img class="specialties__img" src="./images/specialties2.png" alt="Specialties">
+                        <div class="specialties_content text__width">
+                            <h2 class="specialties__title title">Сheese cake</h2>
+
+                            <h3 class="specialties__subtitle subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                molestie est a, tempor magna.
+                            </h3>
+                            <p class="specialties__text text">
+                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+                                ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
+                                sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+                                Nulla facilisis semper laoreet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialties__slider-controls">
+                    <span class="specialties__slider-controls__dot" onclick="currentSlide(1)"></span>
+                    <span class="specialties__slider-controls__dot" onclick="currentSlide(2)"></span>
+                    <span class="specialties__slider-controls__dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="delicious p_100">
+            <div class="delicious__container container">
+                <h2 class="delicious__title title" id="menu">DELICIOUS MENU</h2>
+                <p class="delicious__subtitle subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                    a, tempor magna.
+                </p>
+                <div class="delicious__tabs" id="delicious-tabs">
+                    <div class="delicious__controls" data-controls>
+                        <a href="#SOUPE" class="delicious__items delicious__item">SOUPE</a>
+                        <a href="#PIZZA" class="delicious__items delicious__item">PIZZA</a>
+                        <a href="#PASTA" class="delicious__items delicious__item">PASTA</a>
+                        <a href="#DESERT" class="delicious__items delicious__item">DESERT</a>
+                        <a href="#WINE" class="delicious__items delicious__item">WINE</a>
+                        <a href="#BEER" class="delicious__items delicious__item">BEER</a>
+                        <a href="#DRINKS" class="delicious__items">DRINKS</a>
+                    </div>
+
+                    <div class="delicious__menu" data-delicious>
+                        <div class="delicious__id" id="SOUPE">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">SOUPE CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">USD Integer ullamcorper neque eu purus
+                                        euismod</p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">SOUPE BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">USD Integer ullamcorper neque eu purus
+                                        euismod</p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">SOUPE ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">SOUPE TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="PIZZA">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PIZZA CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PIZZA BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PIZZA ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PIZZA TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="PASTA">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PASTA CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PASTA BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PASTA ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">PASTA TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="DESERT">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DESERT CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DESERT BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DESERT ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DESERT TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="WINE">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">WINE CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">WINE BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">WINE ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">WINE TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="BEER">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">BEER CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">BEER BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">BEER ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">BEER TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delicious__id" id="DRINKS">
+                            <div class="delicious__content">
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DRINKS CREAM . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DRINKS BEEF . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DRINKS ONION . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                                <div class="delicious__list">
+                                    <p class="delicious__list-dish">DRINKS TOMATO . . . . 55,68</p>
+                                    <p class="delicious__list-description">
+                                        USD Integer ullamcorper neque eu purus euismod
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events p_100">
+            <div class="events__container container">
+                <h2 class="events__title title">PRIVATE EVENTS</h2>
+                <div class="events__contents">
+                    <div class="events__content">
+                        <img class="events__img" srcset="./images/events2@2x.png 2x" src="./images/events2.png" alt="Private events">
+                        <p class="events__weddings">weddings</p>
+                    </div>
+                    <div class="events__content">
+                        <p class="events__parties">corporate parties</p>
+                        <img class="events__img" srcset="./images/events1@2x.png 2x" src="./images/events1.png" alt="Private events" width="475"
+                            height="475">
+                    </div>
+                </div>
+                <p class="events__call">
+                    For private events please call: <a href="tel:+40729131637"> +40 729 131 637 </a> or use the contact
+                    form.
+                </p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery__container container">
+                <img class="gallery__img" srcset="./images/events3@2x.jpg 2x" src="./images/events3.jpg" alt="gallery"
+                    width="295" height="295">
+                <img class="gallery__img" srcset="./images/events4@2x.jpg 2x" src="./images/events4.jpg" alt="gallery"
+                    width="295" height="295">
+                <img class="gallery__img" srcset="./images/events5@2x.jpg 2x" src="./images/events5.jpg" alt="gallery"
+                    width="295" height="295">
+                <img class="gallery__img" srcset="./images/events6@2x.jpg 2x" src="./images/events6.jpg" alt="gallery"
+                    width="295" height="295">
+            </div>
+        </section>
+
+        <section id="contact" class="contact p_100">
+            <div class="contact__container container">
+                <h2 class="contact__title title">CONTACT</h2>
+
+                <p class="contact__subtitle subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                    a, tempor magna.
+                </p>
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/xzbyvrvz" method="POST">
+                    <div class="contact__form-block">
+                        <input class="contact__input" type="text" name="name" placeholder="Name"
+                            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                            title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc required">
+                        <input class="contact__input" type="text" name="email" placeholder="Email"
+                            title="Enter your email " required>
+                        <input class="contact__input" type="text" name="phone" placeholder="Phone"
+                            pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+                            title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+                            required>
+                    </div>
+                    <input class="contact__input contact__input-message" type="text" name="text"
+                        placeholder="Message">
+                    <div class="contact__data">
+                        <div class="contact__content content__icons">
+                            <div class="content__icon">
+                                <svg class="icon__location" width="16px" height="12px">
+                                    <use href="./images/sprite.svg#icon-location"></use>
+                                </svg>
+                                <p class="content__text">London SW1A 0AA</p>
+                            </div>
+                            <div class="content__icon">
+                                <svg class="icon__phone" width="16px" height="12px">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+40729131637" class="content__text">+40 729 131 637</a>
+                            </div>
+                            <div class="content__icon">
+                                <svg class="icon__envelop" width="16px" height="12px">
+                                    <use href="./images/sprite.svg#icon-envelop"></use>
+                                </svg>
+                                <a href="" class="content__text">office@mindblister.com </a>
+                            </div>
+                        </div>
+                        <button type="submit" data-modal-open class="contact__button button" id="contact-form-button">
+                            SEND MESSAGE
+                        </button>
+                    </div>
+                    <p class="contact__message" id="contact-form-status"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__container container">
+                <iframe class="map__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317840.9242338966!2d-0.18540522462348105!3d51.51079021335804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1624517949783!5m2!1sru!2sua"
+                    style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__social">
+                <a href="" class="link__fb">
+                    <img class="icons__fb" src="./images/fb.png" alt="icon" width="18" height="18">
+                </a>
+                <a href="" class="link__twit">
+                    <img class="icons__twit" src="./images/twit.png" alt="icon" width="18" height="18">
+                </a>
+                <a href="" class="link__insta">
+                    <img class="icons__insta" src="./images/insta.png" alt="icon" width="18" height="18">
+                </a>
+            </div>
+            <p class="footer-copyright">© Restaurant HUNGRY PEOPLE 2021</p>
+        </div>
+    </footer>
+    <script src="./js/form-booking.js"></script>
+    <script src="./js/form-contact.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/tabs-plugin.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/button-top.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+.book__content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.book__content-form {
+  text-align: center;
+}
+
+.book__form {
+  margin-top: 40px;
+}
+
+.book__title {
+  text-align: center;
+}
+
+.book__input {
+  width: 277px;
+  height: 60px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  padding-left: 10px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.book__button {
+  min-width: 564px;
+  margin-top: 5px;
+
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    min-width: 270px;
+    margin-top: 10px;
+  }
+}
+
+.book__img {
+  @media screen and (min-width: 1200px) {
+    margin-left: 80px;
+    max-width: 475px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
+
+.book__data {
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #333333;
+  margin-top: 10px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+  }
+}
+
+.book__tel {
+  color: #333333;
+}
+
+.book__scrollup {
+  position: fixed;
+  bottom: 50px;
+  right: 35px;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  background: url(../images/icon-top.png) no-repeat;
+
+  @media screen and (max-width: 425px) {
+    right: 10px;
+
+  }
+}
+
+.book__form-status {
+  margin-top: 5px;
+}

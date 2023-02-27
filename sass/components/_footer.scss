@@ -1,0 +1,22 @@
+.footer {
+  background-color: $color_black;
+  padding: 45px 0px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-copyright {
+  font-family: $color_white;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,18 @@
+.button {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+
+    color: $color_white;
+    background-color: $color_accent;
+    font-family: $font_accent;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.67;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

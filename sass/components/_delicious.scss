@@ -1,0 +1,101 @@
+.delicious {
+  text-align: center;
+}
+
+.delicious__subtitle {
+  margin-top: 40px;
+}
+
+// tabs
+.delicious__tabs {
+  margin-top: 40px;
+}
+
+.delicious__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delicious__items {
+  position: relative;
+  padding: 10px 30px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+
+  @media screen and (max-width: 1023.98px) {
+    padding: 15px 8px 15px 8px;
+    font-size: 12px;
+  }
+}
+
+.delicious__item {
+  position: relative;
+}
+
+.delicious__item:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-color: $color_grey;
+  width: 1px;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+}
+
+.delicious__item-active {
+  color: rgb(248, 195, 23);
+}
+
+.delicious__list {
+  padding: 20px;
+}
+
+.delicious__list-dish {
+  font-family: $font_details;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  color: $color_grey_accent;
+}
+
+.delicious__list-description {
+  margin: 5px 0 0 0;
+}
+
+.delicious__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.delicious__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delicious__id {
+  display: none;
+  padding: 15px;
+  animation: fadeEffect 500ms;
+}
+
+.delicious__active {
+  display: block;
+}
+
+/* Animation */
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

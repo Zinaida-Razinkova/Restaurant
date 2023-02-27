@@ -1,0 +1,11 @@
+.map__iframe {
+    width: 100%;
+
+    @media screen and (min-width: 426px) {
+        min-height: 600px;
+    }
+
+    @media screen and (max-width: 425px) {
+        min-height: 400px;
+    }
+}

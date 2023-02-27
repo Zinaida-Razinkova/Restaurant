@@ -1,0 +1,14 @@
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery__img {
+  max-width: 475px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
